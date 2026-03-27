@@ -511,7 +511,7 @@ ul{list-style:none}
   .nav-m a{font-size:20px;letter-spacing:0;text-transform:none;opacity:.7;padding:8px 0}
   .nav-btn{display:inline-flex;margin-top:12px;font-size:14px;padding:14px 32px}
   .burger{display:block}
-  .mob-ov{position:fixed;inset:0;background:rgba(0,0,0,.85);opacity:0;visibility:hidden;transition:all .4s;z-index:999}
+  .mob-ov{position:fixed;inset:0;background:transparent;opacity:0;visibility:hidden;transition:all .3s;z-index:999}
   .mob-ov.vis{opacity:1;visibility:visible}
 
   /* Hero mobile */
