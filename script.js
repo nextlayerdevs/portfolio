@@ -154,16 +154,53 @@ window.addEventListener("scroll",()=>{nav.classList.toggle("solid",window.scroll
 
 const burger=document.querySelector(".burger");
 const navM=document.querySelector(".nav-m");
-const mobOv=document.querySelector(".mob-ov");
-function closeM(){burger.classList.remove("on");navM.classList.remove("on");mobOv.classList.remove("vis");document.body.style.overflow=""}
-burger.addEventListener("click",()=>{
-  if(navM.classList.contains("on"))closeM();
-  else{burger.classList.add("on");navM.classList.add("on");mobOv.classList.add("vis");document.body.style.overflow="hidden"}
-});
-mobOv.addEventListener("click",closeM);
-navM.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeM));
 
+function closeM(){
+  burger.classList.remove("on");
+  navM.classList.remove("on");
+  document.body.style.overflow="";
+}
+
+function openM(){
+  burger.classList.add("on");
+  navM.classList.add("on");
+  document.body.style.overflow="hidden";
+}
+
+burger.addEventListener("click",(e)=>{
+  e.stopPropagation();
+  navM.classList.contains("on") ? closeM() : openM();
+});
+
+// Close menu when tapping outside
+document.addEventListener("click",(e)=>{
+  if(navM.classList.contains("on") && !navM.contains(e.target) && !burger.contains(e.target)){
+    closeM();
+  }
+});
+
+// Menu links: close menu + smooth scroll
+navM.querySelectorAll("a").forEach(a=>{
+  a.addEventListener("click",(e)=>{
+    e.preventDefault();
+    e.stopPropagation();
+    const href = a.getAttribute("href");
+    closeM();
+    // Small delay so menu closes before scroll
+    setTimeout(()=>{
+      if(href && href.startsWith("#")){
+        const t = document.querySelector(href);
+        if(t) window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-80,behavior:"smooth"});
+      } else if(href){
+        window.location.href = href;
+      }
+    }, 100);
+  });
+});
+
+// Smooth scroll for all OTHER anchor links (not in nav menu, those are handled above)
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  if(navM.contains(a)) return; // skip nav links, already handled
   a.addEventListener("click",(e)=>{
     e.preventDefault();
     const t=document.querySelector(a.getAttribute("href"));
