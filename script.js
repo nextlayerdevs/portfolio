@@ -342,3 +342,21 @@ if(window.innerWidth > 768){
 }
 
 })();
+
+
+/* ═══════ PORTFOLIO TOGGLE ═══════ */
+function togglePortfolio(){
+  const extra = document.getElementById("pfExtra");
+  const btn = document.getElementById("pfToggle");
+  if(!extra || !btn) return;
+
+  if(extra.classList.contains("open")){
+    extra.classList.remove("open");
+    btn.textContent = "Carica di più ↓";
+  } else {
+    extra.classList.add("open");
+    btn.textContent = "Carica di meno ↑";
+    // Trigger scroll reveal for newly visible cards
+    extra.querySelectorAll(".sr:not(.v)").forEach(el => el.classList.add("v"));
+  }
+}

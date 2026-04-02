@@ -9,8 +9,8 @@
   --card:#0d0d15; --elevated:#12121e;
   --w:#fff;
   --w90:rgba(255,255,255,.92); --w60:rgba(255,255,255,.6);
-  --w40:rgba(255,255,255,.4); --w20:rgba(255,255,255,.2);
-  --w10:rgba(255,255,255,.1); --w06:rgba(255,255,255,.06);
+  --w40:rgba(255,255,255,.4); --w20:rgba(255,255,255,.45);
+  --w10:rgba(255,255,255,.25); --w06:rgba(255,255,255,.06);
   --w03:rgba(255,255,255,.03);
   --accent:#6366f1; --accent-b:#818cf8;
   --accent-g:rgba(99,102,241,.35);
@@ -394,7 +394,7 @@ ul{list-style:none}
 .pf-sub{font-size:16px;color:var(--w20);max-width:480px}
 
 .pf-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
-.pf-card{border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--w03);position:relative;transition:all .6s var(--ease)}
+.pf-card{border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--w03);position:relative;transition:all .6s var(--ease);display:block;cursor:pointer}
 .pf-card:hover{border-color:var(--w06)}
 .pf-card.big{grid-column:1/-1}
 
@@ -404,10 +404,12 @@ ul{list-style:none}
 .pf-br{position:absolute;inset:20px;border-radius:10px;background:var(--card);border:1px solid var(--w03);overflow:hidden;transition:transform .8s var(--ease-out)}
 .pf-card:hover .pf-br{transform:scale(1.015)}
 
-.pf-bbar{height:28px;background:var(--w03);display:flex;align-items:center;padding:0 12px;gap:6px;border-bottom:1px solid var(--w03)}
+.pf-bbar{height:28px;background:var(--w03);display:flex;align-items:center;padding:0 12px;gap:6px;border-bottom:1px solid var(--w03);flex-shrink:0}
 .pf-d{width:7px;height:7px;border-radius:50%}
 .pf-d-r{background:#ff5f57;opacity:.6}.pf-d-y{background:#ffbd2e;opacity:.6}.pf-d-g{background:#28c840;opacity:.6}
 .pf-url{margin-left:14px;padding:2px 12px;background:var(--w03);border-radius:4px;font-size:10px;color:var(--w20)}
+
+.pf-img{width:100%;height:auto;display:block;object-fit:cover;background:var(--bg)}
 
 .pf-wf{padding:18px}
 .pf-wl{height:5px;border-radius:2px;background:var(--w03);margin-bottom:8px}
@@ -426,6 +428,12 @@ ul{list-style:none}
 .pf-lk:hover{background:var(--w);border-color:var(--w)}
 .pf-lk svg{width:16px;height:16px;stroke:var(--w40);stroke-width:2;fill:none;transition:stroke .3s}
 .pf-lk:hover svg{stroke:var(--black)}
+
+/* Portfolio toggle */
+.pf-extra{max-height:0;overflow:hidden;opacity:0;transition:max-height .8s var(--ease),opacity .6s var(--ease)}
+.pf-extra.open{max-height:4000px;opacity:1}
+.pf-toggle{background:none;border:1px solid var(--w10);color:var(--w60);font-family:var(--font);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:16px 40px;border-radius:100px;cursor:pointer;transition:all .4s var(--ease)}
+.pf-toggle:hover{border-color:var(--w20);color:var(--w);background:var(--w03)}
 
 
 /* ============================================
