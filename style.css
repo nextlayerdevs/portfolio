@@ -177,8 +177,8 @@ ul{list-style:none}
 .nav{position:fixed;top:0;left:0;width:100%;z-index:100;padding:28px 0;transition:all .5s var(--ease)}
 .nav.solid{padding:18px 0;background:rgba(0,0,0,.85);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px)}
 .nav-i{display:flex;align-items:center;justify-content:space-between}
-.nav-logo img{height:52px;filter:brightness(0) invert(1);transition:height .4s var(--ease)}
-.nav.solid .nav-logo img{height:40px}
+.nav-logo img{height:60px;transition:height .4s var(--ease)}
+.nav.solid .nav-logo img{height:46px}
 .nav-m{display:flex;align-items:center;gap:44px}
 .nav-m a{font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--w);opacity:.5;transition:opacity .3s;position:relative}
 .nav-m a:hover{opacity:1}
@@ -200,7 +200,7 @@ ul{list-style:none}
 /* ============================================
    HERO — much more alive
    ============================================ */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:0 0 72px;overflow:hidden}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 0 72px;overflow:hidden}
 
 #hc{position:absolute;inset:0;width:100%;height:100%;z-index:0}
 
@@ -472,7 +472,7 @@ ul{list-style:none}
    ============================================ */
 .ft{padding:72px 0 40px;border-top:1px solid var(--w06)}
 .ft-g{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:64px}
-.ft-br img{height:30px;filter:brightness(0) invert(1);margin-bottom:20px}
+.ft-br img{height:40px;margin-bottom:20px}
 .ft-br-t{font-size:14px;color:var(--w20);line-height:1.7;max-width:280px}
 .ft-col h5{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--w10);margin-bottom:24px}
 .ft-col a{display:block;font-size:14px;color:var(--w20);margin-bottom:14px;transition:all .3s}
@@ -484,6 +484,14 @@ ul{list-style:none}
 .ft-soc a:hover{border-color:var(--w20);background:var(--w03)}
 .ft-soc svg{width:14px;height:14px;fill:var(--w20);transition:fill .3s}
 .ft-soc a:hover svg{fill:var(--w)}
+
+
+/* ============================================
+   WHATSAPP BUTTON
+   ============================================ */
+.wa-btn{position:fixed;bottom:28px;right:28px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s var(--ease)}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,.6)}
+.wa-btn svg{width:30px;height:30px}
 
 
 /* ============================================
@@ -512,8 +520,8 @@ ul{list-style:none}
   /* Nav mobile menu */
   .nav{padding:20px 0}
   .nav.solid{padding:14px 0}
-  .nav-logo img{height:40px}
-  .nav.solid .nav-logo img{height:34px}
+  .nav-logo img{height:48px}
+  .nav.solid .nav-logo img{height:40px}
   .nav-m{position:fixed;top:0;right:-100%;width:85%;max-width:340px;height:100dvh;background:var(--bg);flex-direction:column;align-items:flex-start;justify-content:center;padding:48px 36px;gap:28px;transition:right .5s var(--ease-out);box-shadow:-40px 0 80px rgba(0,0,0,.8);z-index:1001;border-left:1px solid var(--w06);overflow-y:auto}
   .nav-m.on{right:0}
   .nav-m a{font-size:20px;letter-spacing:0;text-transform:none;opacity:.7;padding:12px 0;display:block;width:100%;position:relative;z-index:10}
