@@ -3,24 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>NextLayer</title>
+  <title>NextLayer — Soluzioni Digitali per la Tua Attività</title>
   <meta name="description" content="NextLayer — soluzioni digitali per la tua attività. Siti web, e-commerce, SEO, campagne pubblicitarie e sistemi di ordinazione. Design d'impatto, risultati concreti." />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#060608" />
+  <meta property="og:title" content="NextLayer — Soluzioni Digitali" />
+  <meta property="og:description" content="Siti web, e-commerce, SEO, campagne pubblicitarie e soluzioni digitali su misura." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nextlayerdevs.com" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://image.thum.io" crossorigin />
+  <link rel="dns-prefetch" href="https://image.thum.io" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="cur"></div>
-  <div class="cur-o"></div>
-  <div class="mob-ov"></div>
+  <!-- Skip to content (accessibility) -->
+  <a href="#main" class="skip-link">Vai al contenuto</a>
+
+  <div class="cur" aria-hidden="true"></div>
+  <div class="cur-o" aria-hidden="true"></div>
 
 
   <!-- ═══════════════════════════════════════
        INTRO — builds site, browser expands
        ═══════════════════════════════════════ -->
-  <div class="intro">
+  <div class="intro" aria-hidden="true" role="presentation">
     <div class="intro-code">
       <div class="intro-code-inner">
 <pre>
@@ -111,9 +119,9 @@
 
 
   <!-- ═══════ NAV ═══════ -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Navigazione principale">
     <div class="w nav-i">
-      <a href="#hero" class="nav-logo"><img src="logo.png" alt="NextLayer" /></a>
+      <a href="#hero" class="nav-logo"><img src="logo.png" alt="NextLayer" width="277" height="200" fetchpriority="high" decoding="async" /></a>
       <div class="nav-m">
         <a href="#servizi">Servizi</a>
         <a href="#perche">Perché noi</a>
@@ -126,12 +134,13 @@
   </nav>
 
 
+  <main id="main">
   <!-- ═══════ HERO ═══════ -->
   <section class="hero" id="hero">
-    <canvas id="hc"></canvas>
+    <canvas id="hc" aria-hidden="true"></canvas>
 
     <!-- Floating particles -->
-    <div class="hero-particles">
+    <div class="hero-particles" aria-hidden="true">
       <div class="particle"></div><div class="particle"></div>
       <div class="particle"></div><div class="particle"></div>
       <div class="particle"></div><div class="particle"></div>
@@ -159,7 +168,7 @@
   <div class="grad-line"></div>
 
   <!-- ═══════ NUMBERS ═══════ -->
-  <section class="nums sr">
+  <section class="nums sr" aria-label="Statistiche">
     <div class="w"><div class="nums-g">
       <div class="num"><div class="num-v" data-count="120" data-suffix="+">0</div><div class="num-l">Progetti realizzati</div></div>
       <div class="num"><div class="num-v" data-count="98" data-suffix="%">0</div><div class="num-l">Clienti soddisfatti</div></div>
@@ -194,10 +203,10 @@
         <p class="why-d">Il tuo team dedicato, che trasforma la tua attività in un punto di riferimento digitale.</p>
       </div>
       <div class="why-g">
-        <div class="why-c sr d1"><div class="why-ic"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Ultra veloce</h3><p>Risultati che si vedono subito. Progetti consegnati nei tempi, senza ritardi.</p></div>
-        <div class="why-c sr d2"><div class="why-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><h3>Su misura al 100%</h3><p>Ogni progetto è unico, costruito intorno alle esigenze reali del tuo business.</p></div>
-        <div class="why-c sr d3"><div class="why-ic"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Risultati misurabili</h3><p>Non vendiamo aria. Ogni soluzione è pensata per portare clienti e far crescere i numeri.</p></div>
-        <div class="why-c sr d4"><div class="why-ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Supporto dedicato</h3><p>Ci siamo sempre. Rispondiamo velocemente e risolviamo subito.</p></div>
+        <div class="why-c sr d1"><div class="why-ic"><svg aria-hidden="true" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Ultra veloce</h3><p>Risultati che si vedono subito. Progetti consegnati nei tempi, senza ritardi.</p></div>
+        <div class="why-c sr d2"><div class="why-ic"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><h3>Su misura al 100%</h3><p>Ogni progetto è unico, costruito intorno alle esigenze reali del tuo business.</p></div>
+        <div class="why-c sr d3"><div class="why-ic"><svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Risultati misurabili</h3><p>Non vendiamo aria. Ogni soluzione è pensata per portare clienti e far crescere i numeri.</p></div>
+        <div class="why-c sr d4"><div class="why-ic"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Supporto dedicato</h3><p>Ci siamo sempre. Rispondiamo velocemente e risolviamo subito.</p></div>
       </div>
     </div>
   </section>
@@ -224,20 +233,20 @@
       <!-- PROGETTO: Marco CAR SERVICE (card grande — il migliore in alto) -->
       <div class="pf-row">
         <a href="https://marcocarservice.it/" target="_blank" rel="noopener" class="pf-card big sr" style="text-decoration:none;color:inherit">
-          <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">marcocarservice.it</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://marcocarservice.it/" alt="Marco CAR SERVICE" loading="lazy"></div></div>
-          <div class="pf-info"><div><div class="pf-tag">Officina</div><h3>Marco CAR SERVICE</h3><p>Meccanico a Torino con la passione per il racing</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+          <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">marcocarservice.it</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://marcocarservice.it/" alt="Marco CAR SERVICE" loading="lazy"></div></div>
+          <div class="pf-info"><div><div class="pf-tag">Officina</div><h3>Marco CAR SERVICE</h3><p>Meccanico a Torino con la passione per il racing</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
         </a>
       </div>
 
       <!-- PROGETTO: EffeGomme + Civardi -->
       <div class="pf-row">
         <a href="https://effegomme.it/" target="_blank" rel="noopener" class="pf-card sr d1" style="text-decoration:none;color:inherit">
-          <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">effegomme.it</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://effegomme.it/" alt="EffeGomme" loading="lazy"></div></div>
-          <div class="pf-info"><div><div class="pf-tag">Gommista</div><h3>EffeGomme</h3><p>Vendita e assistenza pneumatici a Villastellone</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+          <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">effegomme.it</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://effegomme.it/" alt="EffeGomme" loading="lazy"></div></div>
+          <div class="pf-info"><div><div class="pf-tag">Gommista</div><h3>EffeGomme</h3><p>Vendita e assistenza pneumatici a Villastellone</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
         </a>
         <a href="https://civardi.com/" target="_blank" rel="noopener" class="pf-card sr d2" style="text-decoration:none;color:inherit">
-          <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">civardi.com</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://civardi.com/" alt="Civardi" loading="lazy"></div></div>
-          <div class="pf-info"><div><div class="pf-tag">Carrozzeria</div><h3>Civardi</h3><p>Carrozzeria storica a Moncalieri dal 1957</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+          <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">civardi.com</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://civardi.com/" alt="Civardi" loading="lazy"></div></div>
+          <div class="pf-info"><div><div class="pf-tag">Carrozzeria</div><h3>Civardi</h3><p>Carrozzeria storica a Moncalieri dal 1957</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
         </a>
       </div>
 
@@ -247,44 +256,44 @@
         <!-- PROGETTO: DOMINA.RE + CM Servizi -->
         <div class="pf-row">
           <a href="https://gruppodominare.it/" target="_blank" rel="noopener" class="pf-card sr d1" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">gruppodominare.it</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://gruppodominare.it/" alt="DOMINA.RE" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">Immobiliare</div><h3>DOMINA.RE</h3><p>Agenzia immobiliare Home &amp; Business</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">gruppodominare.it</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://gruppodominare.it/" alt="DOMINA.RE" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">Immobiliare</div><h3>DOMINA.RE</h3><p>Agenzia immobiliare Home &amp; Business</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
           <a href="https://www.cmservizi.it/" target="_blank" rel="noopener" class="pf-card sr d2" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">cmservizi.it</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://www.cmservizi.it/" alt="CM Servizi" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">Servizi</div><h3>CM Servizi</h3><p>Impresa multiservizi e facility management</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">cmservizi.it</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://www.cmservizi.it/" alt="CM Servizi" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">Servizi</div><h3>CM Servizi</h3><p>Impresa multiservizi e facility management</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
         </div>
 
         <!-- PROGETTO: Tour TO Bike + Studio Raffa -->
         <div class="pf-row">
           <a href="https://tourtobike.it/" target="_blank" rel="noopener" class="pf-card sr d1" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">tourtobike.it</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://tourtobike.it/" alt="Tour TO Bike" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">Turismo</div><h3>Tour TO Bike</h3><p>Tour guidati in bicicletta a Torino</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">tourtobike.it</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://tourtobike.it/" alt="Tour TO Bike" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">Turismo</div><h3>Tour TO Bike</h3><p>Tour guidati in bicicletta a Torino</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
           <a href="https://studioraffa.info/" target="_blank" rel="noopener" class="pf-card sr d2" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">studioraffa.info</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://studioraffa.info/" alt="Studio Raffa" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">Studio</div><h3>Studio Raffa</h3><p>Studio professionale di consulenza e servizi</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">studioraffa.info</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://studioraffa.info/" alt="Studio Raffa" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">Studio</div><h3>Studio Raffa</h3><p>Studio professionale di consulenza e servizi</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
         </div>
 
         <!-- PROGETTO: Scuola Ricorsi + IMC Gruppo -->
         <div class="pf-row">
           <a href="https://scuolaricorsi.com/" target="_blank" rel="noopener" class="pf-card sr d1" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">scuolaricorsi.com</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://scuolaricorsi.com/" alt="Scuola Ricorsi" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">Formazione</div><h3>Scuola Ricorsi</h3><p>Piattaforma per ricorsi e assistenza scolastica</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">scuolaricorsi.com</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://scuolaricorsi.com/" alt="Scuola Ricorsi" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">Formazione</div><h3>Scuola Ricorsi</h3><p>Piattaforma per ricorsi e assistenza scolastica</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
           <a href="https://imc-gruppo.com/" target="_blank" rel="noopener" class="pf-card sr d2" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">imc-gruppo.com</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://imc-gruppo.com/" alt="IMC Gruppo" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">Industria</div><h3>IMC Gruppo</h3><p>Industria Metallurgica Carmagnola</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">imc-gruppo.com</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://imc-gruppo.com/" alt="IMC Gruppo" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">Industria</div><h3>IMC Gruppo</h3><p>Industria Metallurgica Carmagnola</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
         </div>
 
         <!-- PROGETTO: Arcana Read (card grande — ultimo, il meno forte) -->
         <div class="pf-row">
           <a href="https://arcanaread.com/" target="_blank" rel="noopener" class="pf-card big sr" style="text-decoration:none;color:inherit">
-            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">arcanaread.com</span></div><img class="pf-img" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://arcanaread.com/" alt="Arcana Read" loading="lazy"></div></div>
-            <div class="pf-info"><div><div class="pf-tag">E-Commerce</div><h3>Arcana Read</h3><p>Piattaforma di tarocchi e cartomanzia professionale</p></div><span class="pf-lk"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
+            <div class="pf-sc"><div class="pf-br"><div class="pf-bbar"><span class="pf-d pf-d-r"></span><span class="pf-d pf-d-y"></span><span class="pf-d pf-d-g"></span><span class="pf-url">arcanaread.com</span></div><img class="pf-img" width="1280" height="720" decoding="async" src="https://image.thum.io/get/width/1280/crop/720/noanimate/https://arcanaread.com/" alt="Arcana Read" loading="lazy"></div></div>
+            <div class="pf-info"><div><div class="pf-tag">E-Commerce</div><h3>Arcana Read</h3><p>Piattaforma di tarocchi e cartomanzia professionale</p></div><span class="pf-lk"><svg aria-hidden="true" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></div>
           </a>
         </div>
 
@@ -330,20 +339,22 @@
   </section>
 
 
+  </main>
+
   <!-- ═══════ FOOTER ═══════ -->
   <footer class="ft">
     <div class="w">
       <div class="ft-g">
-        <div class="ft-br"><img src="logo.png" alt="NextLayer" /><p class="ft-br-t">Soluzioni digitali per qualsiasi attività. Siti web, e-commerce, campagne pubblicitarie, SEO e molto altro.</p></div>
+        <div class="ft-br"><img src="logo.png" alt="NextLayer" width="277" height="200" loading="lazy" decoding="async" /><p class="ft-br-t">Soluzioni digitali per qualsiasi attività. Siti web, e-commerce, campagne pubblicitarie, SEO e molto altro.</p></div>
         <div class="ft-col"><h5>Servizi</h5><a href="#servizi">Siti web &amp; E-commerce</a><a href="#servizi">Restyling</a><a href="#servizi">SEO &amp; Ads</a><a href="#servizi">Soluzioni digitali</a></div>
         <div class="ft-col"><h5>Azienda</h5><a href="#perche">Chi siamo</a><a href="#portfolio">Portfolio</a><!-- <a href="#testimonianze">Recensioni</a> --><a href="#contatti">Contatti</a></div>
-        <div class="ft-col"><h5>Contatti</h5><a href="mailto:nextlayerdevs@gmail.com">nextlayerdevs@gmail.com</a><a href="tel:+393293240522">+39 329 324 0522</a><a href="https://wa.me/393293240522" target="_blank">WhatsApp</a><a href="#">Torino, Italia</a></div>
+        <div class="ft-col"><h5>Contatti</h5><a href="mailto:nextlayerdevs@gmail.com">nextlayerdevs@gmail.com</a><a href="tel:+393293240522">+39 329 324 0522</a><a href="https://wa.me/393293240522" target="_blank" rel="noopener">WhatsApp</a><span style="display:block;font-size:14px;color:var(--w20);margin-bottom:14px">Torino, Italia</span></div>
       </div>
       <div class="ft-bot">
         <p class="ft-cp">© 2026 NextLayer — Tutti i diritti riservati</p>
         <div class="ft-soc">
-          <a href="https://www.instagram.com/nextlayerdevs/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
-          <a href="https://www.facebook.com/profile.php?id=61575461904756" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="https://www.instagram.com/nextlayerdevs/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61575461904756" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
     </div>
@@ -351,9 +362,9 @@
 
   <!-- ═══════ WHATSAPP BUTTON ═══════ -->
   <a href="https://wa.me/393293240522" target="_blank" rel="noopener" class="wa-btn" aria-label="Contattaci su WhatsApp">
-    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
